@@ -6,22 +6,28 @@
 # The downcase method is called on the string object "Hello World"
 # No arguments are passed; downcase has one clear job which is to lowercase all letters that exist in the String
 # The return value is "hello world"
-"Hello World".downcase
+# "Hello World".downcase
 
 
-"Hello World".include?("Hello")
+# "Hello World".include?("Hello")
+# the .include method runs a command with an argument to see if the argument is found within the parameter. 
+# Hello is found within "Hello World" so it returns true
 
 
-"Hello World".end_with?("Hello")
+# p "Hello World".end_with?("Hello") 
+# The .end_with method runs a command with an argument to see if the argument is found within the included parameter
+# "Hello World" does not end with "Hello" so this returns false
 
 
-"Hello World".end_with?("rld")
+# "Hello World".end_with?("rld")
+# Same method as above however "Hello World" does end with "rld" so this returns true
 
 
-12.even?
+# 12.even?
+# .even method is a command ran with an integer to find out if the integer is an even number
+# 12 is an even number so this returns tru
 
-
-18.next
+# p 18.next
 
 
 
@@ -36,8 +42,17 @@
 # The start_with? method returns true if the data in the first_name variable starts with the argument passed in.
 # In this example, the return value is true, because "Jeff" does start with "J".
 # The puts command prints the return value of the start_with? method (true) to the console.
-first_name = "Jeff"
-puts first_name.start_with?("J")
+# first_name = "Jeff"
+# puts first_name.start_with?("J")
+
+# name = "andy"
+# puts name.end_with?("d")
+# the string object "andy" does not end with "d" when the method is called to see if the name ends with d
+# returns false
+
+# name = "andy"
+# puts name.upcase
+# upcase method capitalizes all letters when called on the name variable, returns ANDY
 
 
 
@@ -47,6 +62,13 @@ puts first_name.start_with?("J")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+# number = 8
+# puts number.next
+# .next method calls on the next number after the integer ascending for the number 8, returns 9
+
+# number = 5
+# puts number * 10
+# The * method returns the product of the number (5) multiplied by the integer provided (10), returns 50
 
 
 # SECTION 4: Calling methods on variables assigned to arrays.
@@ -54,3 +76,11 @@ puts first_name.start_with?("J")
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+# list = [1, 2, 3, 4, 5]
+# puts list.first
+# The .first method returns the first element in the array, returned 1
+
+# list = ["Red", "Blue", "Green", "Orange", "Yellow"]
+# puts list.last
+# .last method returns the last element in the array, returned "Yellow"
